@@ -18,10 +18,12 @@ class Laptop {
         this.warranty = warranty;
     }
 }
-
 public class LaptopWise {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        run(input);
+    }
+    public static void run(Scanner input) {
         System.out.println("Welcome to LaptopWise AI.");
         System.out.println("Scenario: Budget-Aware Laptop Selector");
         System.out.println();
@@ -111,7 +113,5 @@ public class LaptopWise {
             System.out.println("Top Recommendation: " + top.name);
             System.out.println("Why: Offers the best price among models meeting all constraints.");
         }
-
-        input.close();
     }
 }

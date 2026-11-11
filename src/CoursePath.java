@@ -2,6 +2,9 @@ import java.util.Scanner;
 public class CoursePath {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        run(input);
+    }
+    public static void run(Scanner input) {
         System.out.println("Welcome to Course DecisionForge AI.");
         System.out.println("Scenario B: CoursePath");
         System.out.println();
@@ -21,7 +24,6 @@ public class CoursePath {
                 (!answer3.equalsIgnoreCase("yes") && !answer3.equalsIgnoreCase("no")) ||
                 (!answer4.equalsIgnoreCase("yes") && !answer4.equalsIgnoreCase("no"))) {
             System.out.println("Invaild input: Please enter yes or no only.");
-            input.close();
             return;
         }
         boolean P = answer1.equalsIgnoreCase("yes");

@@ -33,6 +33,9 @@ class ExprNode {
 public class LaptopWise {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        run(input);
+    }
+    public static void run(Scanner input) {
         System.out.println("Welcome to LaptopWise AI.");
         System.out.println("Scenario: Budget-Aware Laptop Selector");
         System.out.println();
@@ -175,8 +178,6 @@ public class LaptopWise {
             System.out.println("Top Recommendation: " + top.name);
             System.out.println("Explanation Panel: Meets all user-defined constraints ($" + top.price + " <= $" + maxBudget + ", " + top.ram + "GB RAM, " + top.weight + "lbs) and offers the lowest price among eligible candidates.");
         }
-
-        input.close();
     }
 
     // Helper methods for Expression Tree Traversals

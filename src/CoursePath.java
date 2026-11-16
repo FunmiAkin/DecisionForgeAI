@@ -68,7 +68,15 @@ public class CoursePath {
             if (viewDecisionTree.equalsIgnoreCase("yes")) {
                 CoursePathDecisionTree.displayTree();
             }
+            System.out.println();
+        System.out.print("Would you like to view the truth table? (yes/no): ");
+        String viewTruthTable = input.nextLine();
+
+        if (viewTruthTable.equalsIgnoreCase("yes")) {
+            CoursePathTruthTable.displayTable();
         }
+
+    }
     }
 
 
